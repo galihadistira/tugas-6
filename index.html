@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f4f8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 1rem 0;
+    color: #666;
+}
+
+.search-container {
+    margin-top: 1rem;
+}
+
+.search-container input {
+    padding: 0.5rem;
+    width: 300px;
+    max-width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.category-btn {
+    background-color: #f0f4f8;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.category-btn.active {
+    background-color: #34d399;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9fafb;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem;
+    max-width: 300px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-info {
+    padding: 1rem;
+}
+
+.category {
+    color: #34d399;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.author-date {
+    display: block;
+    margin: 0.5rem 0;
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.post h2 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.post p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.post a {
+    display: block;
+    margin-top: 1rem;
+    color: #34d399;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.load-more {
+    background-color: #34d399;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>6 Gunung Yang Berada Di Indonesia</h1>
+        <p>Berikut adalah enam gunung terkenal di Indonesia:
+
+        </p>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+
+    <nav>
+        <button class="category-btn active">Keindahan</button>
+        <button class="category-btn">Wisata</button>
+        <button class="category-btn">Sejarah</button>
+        <button class="category-btn">Harga Wisata</button>
+        <button class="category-btn">Berita</button>
+    </nav>
+
+    <main>
+        <section class="post">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMec1ScBkKnKvgEkMYnjSI0Bz_xGMfpV6K71uIfTIkQCgBs6ovGdY6vY_s5U8DBa0nxPocd633ThkghK2Ohpw23RFwhadJcWTTBsV9-Vika3YJ8FtjlGFhaHZeyu2sNpwkX10sCYtLLWVM/w1200-h630-p-k-no-nu/bromo-sunrise.jpg" alt="Tech Image">
+            <div class="post-info">
+                <span class="category">Gunung Bromo</span>
+                <span class="author-date">John Doe • 19 Jan 2022</span>
+                <h2>Gunung Bromo adalah salah satu gunung berapi yang paling terkenal di Indonesia, terletak di Provinsi Jawa Timur.</h2>
+                <p>Gunung Bromo memiliki ketinggian sekitar 2.329 meter di atas permukaan laut dan terletak di kaldera Tengger yang luas, yang dikelilingi oleh lautan pasir yang luas dan tandus.</p>
+                <a href="#">Kunjungi</a>
+            </div>
+        </section>
+
+        <section class="post">
+            <img src="https://kalokatour.com/wp-content/uploads/2023/08/Rinjani_puncak.jpg" alt="Development Image">
+            <div class="post-info">
+                <span class="category">Gunung Rinjani</span>
+                <span class="author-date">John Doe • 19 Jan 2022</span>
+                <h2>Gunung Rinjani adalah gunung berapi tertinggi kedua di Indonesia, terletak di Pulau Lombok, Nusa Tenggara Barat.</h2>
+                <p>Dengan ketinggian sekitar 3.726 meter di atas permukaan laut, Gunung Rinjani merupakan salah satu tujuan pendakian yang populer di Indonesia dan bahkan di Asia Tenggara.</p>
+                <a href="#">Kunjungi</a>
+            </div>
+        </section>
+
+        <section class="post">
+            <img src="https://radarbanyumas.disway.id/upload/1de2c24283d624613a65f6d2b565f2cb.jpg" alt="Marketing Image">
+            <div class="post-info">
+                <span class="category">Gunung Sumbing</span>
+                <span class="author-date">John Doe • 19 Jan 2022</span>
+                <h2>Gunung Sumbing adalah gunung berapi yang terletak di Provinsi Jawa Tengah, Indonesia. </h2>
+                <p>Gunung ini memiliki ketinggian sekitar 3.371 meter di atas permukaan laut, menjadikannya salah satu gunung tertinggi di pulau Jawa.</p>
+                <a href="#">Kunjungi</a>
+            </div>
+        </section>
+
+        <section class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzGW8nzjhKJNa6YAUOAs54XfAgCotg56PtxA&s" alt="Start-up Image">
+            <div class="post-info">
+                <span class="category">Gunung Lawu</span>
+                <span class="author-date">John Doe • 19 Jan 2022</span>
+                <h2>Gunung Lawu adalah gunung berapi yang terletak di perbatasan antara Provinsi Jawa Tengah dan Jawa Timur, Indonesia</h2>
+                <p>Gunung ini memiliki ketinggian sekitar 3.265 meter di atas permukaan laut dan merupakan salah satu gunung yang sering didaki oleh para pendaki di Jawa.</p>
+                <a href="#">Kunjungi</a>
+            </div>
+        </section>
+
+        <section class="post">
+            <img src="https://eventdaerah.kemenparekraf.go.id/storage/app/uploads/public/669/0cd/153/6690cd153a162349133709.jpg" alt="Article Image">
+            <div class="post-info">
+                <span class="category">Gunung Slamet</span>
+                <span class="author-date">John Doe • 19 Jan 2022</span>
+                <h2>Gunung Slamet adalah gunung berapi yang terletak di Provinsi Jawa Tengah, Indonesia.</h2>
+                <p> Dengan ketinggian sekitar 3.428 meter di atas permukaan laut, Gunung Slamet merupakan gunung tertinggi di Jawa Tengah dan gunung tertinggi kedua di Pulau Jawa setelah Gunung Semeru.</p>
+                <a href="#">Kunjungi</a>
+            </div>
+        </section>
+
+        <section class="post">
+            <img src="https://asset.kompas.com/crops/TeXoQCbZu5buO8Oguv2sXqSJslQ=/0x0:1800x1200/750x500/data/photo/2021/04/30/608bbe9b524d4.jpg" alt="Gunung Merapi">
+            <div class="post-info">
+                <span class="category">Gunung Merapi</span>
+                <span class="author-date">John Doe • 19 Jan 2022</span>
+                <h2>Gunung Merapi adalah gunung berapi yang sangat aktif di Indonesia, terletak di perbatasan antara Provinsi Jawa Tengah dan Daerah Istimewa Yogyakarta.</h2>
+                <p>Gunung ini memiliki ketinggian sekitar 2.930 meter di atas permukaan laut dan dikenal sebagai salah satu gunung berapi paling aktif di dunia. </p>
+                <a href="#">Kunjungi</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <button class="load-more">View more</button>
+    </footer>
+</body>
+</html>
